@@ -1,11 +1,11 @@
 import React from "react";
 import {Btn} from './styles';
 
-const ButtonSm = () => {
+const ButtonSm = (props) => {
     return (
-        <Btn>
+        <Btn style={{backgroundColor:props.bg}}>
             <a href="#">
-                Ir as compras
+                {props.text}
             </a>
         </Btn>
     );
