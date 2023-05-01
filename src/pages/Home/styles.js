@@ -4,6 +4,7 @@ import headerimg from '../../assets/header-img.png';
 
 import banner1 from '../../assets/banner1.png';
 import banner2 from '../../assets/banner2.png';
+import banner3 from '../../assets/banner3.png';
 
 export const HomeContainer = styled.div`
 
@@ -32,7 +33,7 @@ export const HomeContainer = styled.div`
     }
 
     .header{
-        background-image: url(${headerimg});
+        background-image: url(${headerimg});background-attachment:fixed;
         display: flex;align-items:flex-start;justify-content:center;
         flex-direction:column;
         height:89vh;margin-bottom:2rem;
@@ -60,12 +61,12 @@ export const HomeContainer = styled.div`
     }
 
     .banner{
-        width:82vw;height:374px;flex-direction:column;
+        width:82vw;height:23.375rem;flex-direction:column;
         display: flex;align-items:flex-start;justify-content:center;
         margin-bottom:6rem;
 
         @media only screen and (max-width: 500px){
-            width:94vw;background-size: cover;
+            width:94vw;height:33rem;background-size: cover;
         }
 
         .text{
@@ -88,4 +89,34 @@ export const HomeContainer = styled.div`
 
     .banner1{background-image: url(${banner1});}
     .banner2{background-image: url(${banner2});}
+    .banner3{background-image: url(${banner3});}
+
+    footer{
+
+        .logo-footer{
+            display: flex;justify-content:flex-start;align-items:center;
+            img{
+                margin-left:1.5rem;
+                
+                @media only screen and (max-width: 500px){margin-left:0;margin-block:1rem;}
+            }
+        }
+
+        ul{
+            margin-top: 0.50rem;
+
+            li{list-style-type:none;}
+        }
+        a{
+            color:white;text-decoration:none;
+            font-size:1.125rem;font-weight:500;
+            border:solid 1px transparent;
+            transition:.2s;          
+
+            &:hover{opacity: 0.7;margin-left:0.4rem;}
+
+            @media only screen and (max-width: 500px){font-size:1.375rem;}
+        }
+        
+    }
 `;

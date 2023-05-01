@@ -1,12 +1,16 @@
 import React from "react";
 import {Nav} from './styles';
 
+import Logo from '../../assets/logo.png';
+
 const Navbar = () => {
     return (
         <Nav>
-            <nav class="navbar navbar-expand-lg container bg-warning" >
+            <nav class="navbar navbar-expand-lg container bg-primary navbar-dark" >
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">StoreStyle</a>
+                    <a class="navbar-brand" href="#">
+                        <img src={Logo} alt="Logo do Site" />
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -19,10 +23,10 @@ const Navbar = () => {
                             </form>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Carrinho</a>
+                                <a class="nav-link text-light" href="#">Carrinho</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Conta</a>
+                                <a class="nav-link text-light" href="#">Conta</a>
                             </li>
                         </ul>
                     </div>

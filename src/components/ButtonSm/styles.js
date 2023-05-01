@@ -5,6 +5,11 @@ export const Btn = styled.button`
     width:13.938rem;height:3.375rem;
     display: flex;justify-content:flex-start;
     align-items: center;transition:.2s;
+    border:solid 1px transparent;
+
+    &:hover{
+        border:solid 1px whitesmoke;
+    }
 
     a{
         text-decoration: none;
