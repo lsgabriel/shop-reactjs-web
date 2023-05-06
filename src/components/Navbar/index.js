@@ -3,6 +3,8 @@ import {Nav} from './styles';
 
 import Logo from '../../assets/logo.png';
 
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <Nav>
@@ -26,7 +28,9 @@ const Navbar = () => {
                                 <a class="nav-link text-light" href="#">Carrinho</a>
                             </li>
                             <li class="nav-item">
+                            <Link to='/login'>
                                 <a class="nav-link text-light" href="#">Conta</a>
+                            </Link>    
                             </li>
                         </ul>
                     </div>

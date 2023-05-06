@@ -11,7 +11,7 @@ export const Nav = styled.div`
         .navbar-nav{
             a{
                 border-bottom:solid 1px transparent;
-                &:hover{border-bottom:solid 2px whitesmoke;}
+                &:hover{border-bottom:solid 1px whitesmoke;}
             }
         }
     }

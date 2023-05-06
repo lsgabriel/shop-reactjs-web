@@ -7,6 +7,8 @@ import Card from "../../components/Card";
 
 import Logo from '../../assets/logo.png';
 
+import { Link } from "react-router-dom";
+
 const Home = () =>{
     return(
         <HomeContainer style={{backgroundColor:"#1B1B1B"}}>
@@ -34,7 +36,9 @@ const Home = () =>{
                         <h2>Cadastre-se para receber novidades</h2>
                         <p>Receba nossas novidades diretamente no seu e-mail ao se cadastrar em nosso site</p>
 
-                        <ButtonSm bg="#0D6EFD" text="Criar Conta"/>
+                        <Link to='/login'>
+                            <ButtonSm bg="#0D6EFD" text="Criar Conta"/>
+                        </Link>
                     </div>
                 </div>
 

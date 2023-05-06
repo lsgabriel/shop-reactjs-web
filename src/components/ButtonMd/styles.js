@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Btn = styled.button`
-    border:none;
-    width:13.938rem;height:3.375rem;
-    display: flex;justify-content:flex-start;
+    border:none;border-radius:0.25rem;
+    width:24rem;height:3.375rem;
+    display: flex;justify-content:center;
     align-items: center;transition:.2s;
     border:solid 1px transparent;
+    padding: 12px 8px 12px 8px;
 
     &:hover{
         border:solid 1px #CCCCCC;
@@ -27,6 +28,7 @@ export const Btn = styled.button`
     }
 
     @media only screen and (max-width: 500px){
-        width:12.838rem;height:2.275rem;
+        width:18.2rem;height:3rem;
+        
     }
 `;
