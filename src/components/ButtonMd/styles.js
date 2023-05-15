@@ -8,9 +8,7 @@ export const Btn = styled.button`
     border:solid 1px transparent;
     padding: 12px 8px 12px 8px;
 
-    &:hover{
-        border:solid 1px #CCCCCC;
-    }
+    &:hover{opacity: 0.8;}
 
     a{
         text-decoration: none;
