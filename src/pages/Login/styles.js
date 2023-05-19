@@ -21,8 +21,10 @@ export const LoginContainer = styled.div`
         }
 
         label{font-weight:600;font-size:18px;}
+
         .email-label{
             width:28vw;
+            @media only screen and (max-width: 1100px){width:47vw;}
             @media only screen and (max-width: 500px){width:80vw;}
         }
 

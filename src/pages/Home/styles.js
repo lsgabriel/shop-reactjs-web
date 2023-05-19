@@ -7,7 +7,7 @@ import banner2 from '../../assets/banner2.png';
 import banner3 from '../../assets/banner3.png';
 
 export const HomeContainer = styled.div`
-
+    
     h1{
         font-size: 3.3rem;
 
@@ -17,8 +17,7 @@ export const HomeContainer = styled.div`
     }
 
     h2{
-        font-size: 2.813rem;
-        color:white;
+        font-size: 2.813rem;color:white;
 
         @media only screen and (max-width: 500px){
             font-size: 2.2rem;margin-left:0.6rem;
@@ -27,6 +26,7 @@ export const HomeContainer = styled.div`
 
     p{
         font-size: 1.8rem;
+        
         @media only screen and (max-width: 500px){
             font-size: 1.1rem;
         }
@@ -37,6 +37,8 @@ export const HomeContainer = styled.div`
         display: flex;align-items:flex-start;justify-content:center;
         flex-direction:column;
         height:89vh;margin-bottom:2rem;
+
+        @media only screen and (max-width: 1100px){height:50vh;}
 
         @media only screen and (max-width: 500px){
             height:93vh;align-items:center;
@@ -55,6 +57,10 @@ export const HomeContainer = styled.div`
         margin-top:2rem;margin-bottom:2.5rem;
         display: flex;align-items:center;justify-content:space-between;
 
+        @media only screen and (max-width: 1100px){
+            overflow-x: auto;justify-content:flex-start;
+        }
+
         @media only screen and (max-width: 500px){
             overflow-x: auto;justify-content:flex-start;
         }
@@ -64,6 +70,8 @@ export const HomeContainer = styled.div`
         width:82vw;height:23.375rem;flex-direction:column;
         display: flex;align-items:flex-start;justify-content:center;
         margin-bottom:6rem;
+
+        @media only screen and (max-width: 1100px){width:92vw;}
 
         @media only screen and (max-width: 500px){
             width:94vw;height:33rem;background-size: cover;
@@ -82,6 +90,7 @@ export const HomeContainer = styled.div`
 
             p{
                 width:46rem;
+                @media only screen and (max-width: 1100px){width:70vw;}
                 @media only screen and (max-width: 500px){width:70vw;}
             }
         }

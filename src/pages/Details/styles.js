@@ -13,9 +13,8 @@ export const Container = styled.div`
     .primary{
         font-size: 1.8rem;color:white;
 
-        @media only screen and (max-width: 500px){
-            font-size: 1.1rem;
-        }
+        @media only screen and (max-width: 1100px){margin-top:1.3rem;}
+        @media only screen and (max-width: 500px){font-size: 1.1rem;margin-top:0;}
     }
 
     .secondary{font-size:1.1rem;color:white;}
@@ -39,6 +38,7 @@ export const Container = styled.div`
             
                 .gallery-img-main{
                     height:56.5vh;
+                    @media only screen and (max-width: 1100px){height:100%;}
                     @media only screen and (max-width: 500px){height:100%;}
                 }
 
@@ -67,8 +67,7 @@ export const Container = styled.div`
                     @media only screen and (max-width: 500px){
                         grid-column-start: 6;grid-column-end: 9;grid-row-start: 1;grid-row-end: 5;
                     }
-                }
-            
+                }   
         }
 
         .product-info{
@@ -80,8 +79,9 @@ export const Container = styled.div`
 
             .top-info{
                 display: flex;justify-content:space-between;
-
-                @media only screen and (max-width: 500px){flex-direction:column;}
+                
+                @media only screen and (max-width: 1100px){flex-direction:column;gap:15px;}
+                @media only screen and (max-width: 500px){flex-direction:column;gap:5px;}
                 h2{
                     @media only screen and (max-width: 500px){margin-left:0;}
                 }
