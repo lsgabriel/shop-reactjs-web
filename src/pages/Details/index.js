@@ -7,6 +7,11 @@ import CardImg from '../../assets/card-img.png';
 import StarRating from "../../components/StarRating";
 import ButtonSm from "../../components/ButtonSm";
 
+import Card from "../../components/Card";
+
+import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
+
 const Details = () =>{
     return(
         <Container style={{backgroundColor:"#1B1B1B"}}>
@@ -15,7 +20,7 @@ const Details = () =>{
                 <Navbar/>
             </div>
             
-            <div className="first-row">
+            <div className="first-row container">
                 <div className="gallery">
 
                         <div class="gallery-item gallery-item-1">
@@ -65,6 +70,28 @@ const Details = () =>{
                     <ButtonSm bg="#0D6EFD" text="Adicionar ao carrinho"/>
                 </div>
             </div>
+
+            <div className="container">
+                <h2>Talvez você tambem goste</h2>
+
+                <div className="grid">
+                    <Card/> <Card/> <Card/>
+                </div>
+
+                <div className="banner banner1">
+                    <div className="text">
+                        <h2>Cadastre-se para receber novidades</h2>
+                        <p>Receba nossas novidades diretamente no seu e-mail ao se cadastrar em nosso site</p>
+
+                        <Link to='/login'>
+                            <ButtonSm bg="#0D6EFD" text="Criar Conta"/>
+                        </Link>
+                    </div>
+                </div>
+
+                <Footer/>
+            </div>
+            
         </Container>
     );
 }

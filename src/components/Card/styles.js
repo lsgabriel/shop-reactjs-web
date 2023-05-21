@@ -10,6 +10,8 @@ export const CardContainer = styled.div`
     img{
         width: 19.5rem;
 
+        &:hover{opacity: 0.8;}
+
         @media only screen and (max-width: 500px){
             width:17rem;
         }   

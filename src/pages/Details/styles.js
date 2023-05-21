@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import banner1 from '../../assets/banner1.png';
+
 export const Container = styled.div`
 
     h2{
@@ -72,6 +74,7 @@ export const Container = styled.div`
 
         .product-info{
             padding:1rem;
+            @media only screen and (max-width: 500px){margin-bottom:1.5rem;}
 
             .group{
                 line-height: 1rem;margin-bottom:2.6rem;
@@ -97,5 +100,49 @@ export const Container = styled.div`
             }
         }
     }
-    
+
+    .grid{
+        margin-top:2rem;margin-bottom:2.5rem;
+        display: flex;align-items:center;justify-content:space-between;
+
+        @media only screen and (max-width: 1100px){
+            overflow-x: auto;justify-content:flex-start;
+        }
+
+        @media only screen and (max-width: 500px){
+            overflow-x: auto;justify-content:flex-start;
+        }
+    }
+
+    .banner{
+        width:82vw;height:23.375rem;flex-direction:column;
+        display: flex;align-items:flex-start;justify-content:center;
+        margin-bottom:6rem;
+
+        @media only screen and (max-width: 1100px){width:92vw;}
+
+        @media only screen and (max-width: 500px){
+            width:94vw;height:33rem;background-size: cover;
+        }
+
+        .text{
+            color:white;margin-left:4rem;
+
+            @media only screen and (max-width: 500px){
+                margin-left:1.5rem;
+            }
+
+            h2{
+                @media only screen and (max-width: 500px){margin-left:0;}
+            }
+
+            p{
+                width:46rem;
+                @media only screen and (max-width: 1100px){width:70vw;}
+                @media only screen and (max-width: 500px){width:70vw;}
+            }
+        }
+    }
+
+    .banner1{background-image: url(${banner1});}
 `;
