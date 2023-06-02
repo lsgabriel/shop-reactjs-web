@@ -27,8 +27,11 @@ const Navbar = () => {
                             </form>
 
                             <li class="nav-item">
+                            <Link to='/cart'>
                                 <a class="nav-link text-light" href="#">Carrinho</a>
+                            </Link>                                
                             </li>
+
                             <li class="nav-item">
                             <Link to='/login'>
                                 <a class="nav-link text-light" href="#">Conta</a>
