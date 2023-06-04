@@ -44,7 +44,7 @@ const Details = () =>{
                             <h2>Nike Air X</h2>
                             <StarRating/>
                         </div>
-                        <p className="primary">R$ 250.00</p>
+                        <p className="primary">R$ 240.00</p>
                    </div>
 
                    <div className="group">
