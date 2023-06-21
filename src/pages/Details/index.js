@@ -78,17 +78,6 @@ const Details = () =>{
                     <Card/> <Card/> <Card/>
                 </div>
 
-                <div className="banner banner1">
-                    <div className="text">
-                        <h2>Cadastre-se para receber novidades</h2>
-                        <p>Receba nossas novidades diretamente no seu e-mail ao se cadastrar em nosso site</p>
-
-                        <Link to='/login'>
-                            <ButtonSm bg="#0D6EFD" text="Criar Conta"/>
-                        </Link>
-                    </div>
-                </div>
-
                 <Footer/>
             </div>
             

@@ -94,7 +94,6 @@ export const Container = styled.div`
                 display:flex;justify-content:flex-start;align-items:center;
                 
                 input{background-color:#FFFFFF;height: 35px;width: 35px;}
-                /* input:checked {height: 36px;width: 35px;} */
 
                 label{color:white;font-size:1.2rem;margin-right:1.5rem;}
             }
@@ -113,36 +112,4 @@ export const Container = styled.div`
             overflow-x: auto;justify-content:flex-start;
         }
     }
-
-    .banner{
-        width:82vw;height:23.375rem;flex-direction:column;
-        display: flex;align-items:flex-start;justify-content:center;
-        margin-bottom:6rem;
-
-        @media only screen and (max-width: 1100px){width:92vw;}
-
-        @media only screen and (max-width: 500px){
-            width:94vw;height:33rem;background-size: cover;
-        }
-
-        .text{
-            color:white;margin-left:4rem;
-
-            @media only screen and (max-width: 500px){
-                margin-left:1.5rem;
-            }
-
-            h2{
-                @media only screen and (max-width: 500px){margin-left:0;}
-            }
-
-            p{
-                width:46rem;
-                @media only screen and (max-width: 1100px){width:70vw;}
-                @media only screen and (max-width: 500px){width:70vw;}
-            }
-        }
-    }
-
-    .banner1{background-image: url(${banner1});}
 `;

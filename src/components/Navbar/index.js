@@ -22,10 +22,6 @@ const Navbar = () => {
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 "></ul>
 
                         <ul className="navbar-nav">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Procurar" />
-                            </form>
-
                             <li class="nav-item">
                             <Link to='/cart'>
                                 <a class="nav-link text-light" href="#">Carrinho</a>
@@ -34,9 +30,13 @@ const Navbar = () => {
 
                             <li class="nav-item">
                             <Link to='/login'>
-                                <a class="nav-link text-light" href="#">Conta</a>
+                                <a class="nav-link text-light" href="#">Fazer Login</a>
                             </Link>    
                             </li>
+
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Procurar" />
+                            </form>
                         </ul>
                     </div>
                 </div>
