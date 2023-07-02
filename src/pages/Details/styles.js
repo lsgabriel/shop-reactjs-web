@@ -39,14 +39,14 @@ export const Container = styled.div`
             grid-gap: 15px;
             
                 .gallery-img-main{
+                    border-radius: 0.25rem;
                     height:56.5vh;
                     @media only screen and (max-width: 1100px){height:100%;}
                     @media only screen and (max-width: 500px){height:100%;}
                 }
 
                 .gallery-img{
-                    width: 100%;height: 100%;object-fit:contain;
-                    transition: .4s;
+                    width: 100%;height: 100%;object-fit:contain;transition: .4s;
                     &:hover{transform: scale(1.6);}
                 }
 
@@ -80,22 +80,16 @@ export const Container = styled.div`
                 line-height: 1rem;margin-bottom:2.6rem;
             }
 
-            .top-info{
-                display: flex;justify-content:space-between;
-                
-                @media only screen and (max-width: 1100px){flex-direction:column;gap:15px;}
-                @media only screen and (max-width: 500px){flex-direction:column;gap:5px;}
-                h2{
-                    @media only screen and (max-width: 500px){margin-left:0;}
-                }
+            h2{
+                @media only screen and (max-width: 500px){margin-left:0;}
             }
 
             .checkboxes{
                 display:flex;justify-content:flex-start;align-items:center;
                 
-                input{background-color:#FFFFFF;height: 35px;width: 35px;}
+                input{background-color:#FFFFFF;height: 35px;width: 25px;margin-right:0.2rem}
 
-                label{color:white;font-size:1.2rem;margin-right:1.5rem;}
+                label{color:white;font-size:1.1rem;margin-right:1.5rem;}
             }
         }
     }
@@ -103,6 +97,7 @@ export const Container = styled.div`
     .grid{
         margin-top:2rem;margin-bottom:2.5rem;
         display: flex;align-items:center;justify-content:space-between;
+        gap:0.75rem;overflow-x: auto;
 
         @media only screen and (max-width: 1100px){
             overflow-x: auto;justify-content:flex-start;

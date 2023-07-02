@@ -9,8 +9,14 @@ export const Container = styled.div`
         @media only screen and (max-width: 500px){font-size: 2.2rem;}
     }
 
+    h2{
+        color: white;font-size: 2rem;
+
+        @media only screen and (max-width: 500px){font-size: 2.2rem;}
+    }
+
     p{
-        color: white;font-size: 1.8rem;
+        color: white;font-size: 1.5rem;
         
         @media only screen and (max-width: 500px){
             font-size: 1.1rem;
@@ -56,13 +62,13 @@ export const Container = styled.div`
         }
 
         .price{
-            width: 43vw;text-align:center;
+            width: 43vw;text-align:start;
             @media only screen and (max-width: 1100px){width:100vw;margin-top:1.5rem}
             @media only screen and (max-width: 500px){width:100vw;margin-top:1.5rem}
 
             .payment-confirmation{
                 display: flex;justify-content:center;
-                flex-direction:column;align-items:center;
+                flex-direction:column;align-items:flex-start;
                 margin-block:1rem;
             }
         }

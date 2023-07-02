@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
     }
 
     img{
-        width: 19.5rem;
+        width: 19.5rem;border-radius:0.25rem;
 
         &:hover{opacity: 0.8;}
 

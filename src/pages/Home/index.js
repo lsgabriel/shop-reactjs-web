@@ -49,6 +49,12 @@ const Home = () =>{
                     <Card/> <Card/> <Card/>
                 </div>
 
+                
+
+                <div className="grid">
+                    <Card/> <Card/> <Card/>
+                </div>
+
                 <div className="banner banner2" >
                     <div className="text">
                         <h2>Faça o download de nosso aplicativo para ter acesso a todas as nossas ofertas exclusivas!</h2>
@@ -60,10 +66,6 @@ const Home = () =>{
                             <ButtonSm bg="#1B1B1B" text="IOS" />
                         </div>
                     </div>
-                </div>
-
-                <div className="grid">
-                    <Card/> <Card/> <Card/>
                 </div>
 
                 <div className="banner banner3" >

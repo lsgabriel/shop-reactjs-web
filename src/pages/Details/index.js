@@ -40,10 +40,9 @@ const Details = () =>{
 
                 <div className="product-info">
                    <div className="group">
-                        <div className="top-info">
-                            <h2>Nike Air X</h2>
-                            <StarRating/>
-                        </div>
+                   <StarRating/>
+                        <h2 className="mt-3">Nike Air X</h2>
+                        
                         <p className="primary">R$ 240.00</p>
                    </div>
 
@@ -56,14 +55,14 @@ const Details = () =>{
                         <p className="primary">Tamanho</p>
                         
                         <div className="checkboxes">
-                            <input id="Checkbox1" name="Checkbox1" type="checkbox" value="Admin" />
+                            <input id="Checkbox1" name="Checkbox1" type="checkbox" />
                             <label for="Checkbox1">M</label>
 
-                            <input id="Checkbox1" name="Checkbox1" type="checkbox" value="Admin" />
-                            <label for="Checkbox1">G</label>
+                            <input id="Checkbox2" name="Checkbox2" type="checkbox" />
+                            <label for="Checkbox2">G</label>
 
-                            <input id="Checkbox1" name="Checkbox1" type="checkbox" value="Admin" />
-                            <label for="Checkbox1">GG</label>
+                            <input id="Checkbox3" name="Checkbox3" type="checkbox" />
+                            <label for="Checkbox3">GG</label>
                         </div>
                     </div>
 
@@ -75,7 +74,7 @@ const Details = () =>{
                 <h2>Talvez você tambem goste</h2>
 
                 <div className="grid">
-                    <Card/> <Card/> <Card/>
+                    <Card/> <Card/> <Card/> <Card/> 
                 </div>
 
                 <Footer/>

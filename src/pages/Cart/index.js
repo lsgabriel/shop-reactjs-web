@@ -39,13 +39,13 @@ const Cart = () =>{
                     </div>
 
                     <div className="price">
-                        <h1>Detalhes da Compra</h1>
+                        <h2>Detalhes da Compra</h2>
                         <p>Items: {count}</p>
                         <p>Total: R$ 240.00</p>
 
                         <div className="payment-confirmation">
-                            <button className="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <ButtonMd bg="#219653" text="Confirmar"/>
+                            <button className="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <ButtonMd bg="#219653" text="Confirmar"/>
                             </button>
                                 <span className="mb-2"></span>
                             <ButtonMd bg="#1B1B1B" border="#EB5757" linkColor="#EB5757" text="Cancelar"/>

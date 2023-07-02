@@ -69,7 +69,7 @@ export const HomeContainer = styled.div`
     .banner{
         width:82vw;height:23.375rem;flex-direction:column;
         display: flex;align-items:flex-start;justify-content:center;
-        margin-bottom:6rem;
+        margin-bottom:6rem;border-radius:0.50rem;
 
         @media only screen and (max-width: 1100px){width:92vw;}
 

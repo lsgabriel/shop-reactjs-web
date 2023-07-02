@@ -10,6 +10,7 @@ export const Nav = styled.div`
 
         .navbar-nav{
             a{
+                font-weight: 600;
                 border-bottom:solid 1px transparent;
                 &:hover{border-bottom:solid 1px whitesmoke;}
             }
