@@ -35,14 +35,10 @@ export const HomeContainer = styled.div`
     .header{
         background-image: url(${headerimg});background-attachment:fixed;
         display: flex;align-items:flex-start;justify-content:center;
-        flex-direction:column;
-        height:89vh;margin-bottom:2rem;
+        flex-direction:column;height:102vh;margin-bottom:2rem;
 
-        @media only screen and (max-width: 1100px){height:50vh;}
-
-        @media only screen and (max-width: 500px){
-            height:93vh;align-items:center;
-        }
+        @media only screen and (max-width: 1100px){background-size:cover;}
+        @media only screen and (max-width: 500px){align-items:center;}
 
         .text{
             color:white;margin-left:7rem;

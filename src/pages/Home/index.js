@@ -19,7 +19,7 @@ const Home = () =>{
                 <div className="text">
                     <h1>StoreStyle</h1>
                     <p>Coleção da linha SB ja disponivel</p>
-                    <ButtonSm bg="#0D6EFD" text="Ir as compras"/>
+                    <ButtonSm bg="#0D6EFD" text="Ir as compras" link="#shop"/>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@ const Home = () =>{
                     </div>
                 </div>
 
-                <div className="grid">
+                <div className="grid" id="shop">
                     <Card/> <Card/> <Card/>
                 </div>
 

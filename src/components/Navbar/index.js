@@ -1,14 +1,13 @@
 import React from "react";
 import {Nav} from './styles';
 
-import Logo from '../../assets/logo.png';
-
+import Logo from '../../assets/logo1.png';
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <Nav>
-            <nav class="navbar navbar-expand-lg container bg-primary navbar-dark" >
+            <nav class="navbar navbar-expand-lg container bg-primary navbar-dark">
                 <div class="container-fluid">
                     <Link to='/'>
                         <a class="navbar-brand" href="#">
@@ -19,24 +18,26 @@ const Navbar = () => {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 "></ul>
-
-                        <ul className="navbar-nav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                            <Link to='/cart'>
-                                <a class="nav-link text-light" href="#">Carrinho</a>
-                            </Link>                                
+                                <Link to='/cart'>
+                                    <a class="nav-link text-light" href="#">Carrinho</a>
+                                </Link>                                
                             </li>
 
                             <li class="nav-item">
-                            <Link to='/login'>
-                                <a class="nav-link text-light" href="#">Fazer Login</a>
-                            </Link>    
+                                <Link to='/login'>
+                                    <a class="nav-link text-light" href="#">Fazer Login</a>
+                                </Link>    
                             </li>
+                        </ul>
 
+                        <ul className="navbar-nav" >
+                            <li className="nav-item">
                             <form class="d-flex" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Procurar" />
                             </form>
+                            </li>
                         </ul>
                     </div>
                 </div>

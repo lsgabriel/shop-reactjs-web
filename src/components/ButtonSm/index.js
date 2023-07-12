@@ -4,7 +4,7 @@ import {Btn} from './styles';
 const ButtonSm = (props) => {
     return (
         <Btn style={{backgroundColor:props.bg}}>
-            <a href="#">
+            <a style={{color:"white"}} href={props.link} >
                 {props.text}
             </a>
         </Btn>

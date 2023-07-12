@@ -4,7 +4,6 @@ import {Container} from './styles';
 import Navbar from "../../components/Navbar";
 
 import CardImg from '../../assets/card-img.png';
-
 import ButtonMd from "../../components/ButtonMd";
 
 const Cart = () =>{
