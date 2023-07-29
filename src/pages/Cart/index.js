@@ -25,7 +25,7 @@ const Cart = () =>{
                         <div className="item-card">
                             <img src={CardImg} />
                             <div className="text">
-                                <p>Nike Air 4</p>
+                                <p>Nike Flex jacket</p>
                                 <p>R$ 240.00</p>
 
                                 <div className="buttons">

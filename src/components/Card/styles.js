@@ -8,13 +8,10 @@ export const CardContainer = styled.div`
     }
 
     img{
-        width: 19.5rem;border-radius:0.25rem;
-
+        width: 19.5rem;height:344px;border-radius:0.25rem;
         &:hover{opacity: 0.8;}
 
-        @media only screen and (max-width: 500px){
-            width:17rem;
-        }   
+        @media only screen and (max-width: 500px){width:17rem;height:324px;}
     }
 
 

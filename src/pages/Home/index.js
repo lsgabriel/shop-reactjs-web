@@ -5,6 +5,10 @@ import {HomeContainer} from './styles';
 import ButtonSm from "../../components/ButtonSm";
 import Card from "../../components/Card";
 
+import CardImg from '../../assets/card-img.png';
+import CardImg2 from '../../assets/card-img2.jpeg';
+import CardImg3 from '../../assets/card-img3.png';
+
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
 
@@ -27,7 +31,9 @@ const Home = () =>{
                 <h2>Novidades</h2>
 
                 <div className="grid">
-                    <Card/> <Card/> <Card/>
+                    <Card bg={CardImg} title="Nike Flex jacket" span="Frete Gratis"/>
+                    <Card bg={CardImg2} title="Nike Two" span="35% desconto"/>
+                    <Card bg={CardImg3} title="Nike Full zip jacket" span="Novo"/>
                 </div>
 
                 <div className="banner banner1">
@@ -42,17 +48,23 @@ const Home = () =>{
                 </div>
 
                 <div className="grid" id="shop">
-                    <Card/> <Card/> <Card/>
+                    <Card bg={CardImg3} title="Nike Full zip jacket" span="Novo"/>
+                    <Card bg={CardImg} title="Nike Flex jacket" span="Frete Gratis"/>
+                    <Card bg={CardImg} title="Nike Flex jacket" span="Frete Gratis"/>
                 </div>
 
                 <div className="grid">
-                    <Card/> <Card/> <Card/>
+                    <Card bg={CardImg} title="Nike Flex jacket" span="Frete Gratis"/>
+                    <Card bg={CardImg2} title="Nike Two" span="35% desconto"/>
+                    <Card bg={CardImg} title="Nike Flex jacket" span="Frete Gratis"/>
                 </div>
 
                 
 
                 <div className="grid">
-                    <Card/> <Card/> <Card/>
+                    <Card bg={CardImg2} title="Nike Two" span="35% desconto"/>
+                    <Card bg={CardImg3} title="Nike Full zip jacket" span="Novo"/>
+                    <Card bg={CardImg} title="Nike Flex jacket" span="Frete Gratis"/>
                 </div>
 
                 <div className="banner banner2" >

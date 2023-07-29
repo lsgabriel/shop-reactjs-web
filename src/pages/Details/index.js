@@ -4,6 +4,8 @@ import {Container} from './styles';
 import Navbar from "../../components/Navbar";
 
 import CardImg from '../../assets/card-img.png';
+import CardImg2 from '../../assets/card-img2.jpeg';
+
 import StarRating from "../../components/StarRating";
 import ButtonSm from "../../components/ButtonSm";
 
@@ -41,7 +43,7 @@ const Details = () =>{
                 <div className="product-info">
                    <div className="group">
                    <StarRating/>
-                        <h2 className="mt-3">Nike Air X</h2>
+                        <h2 className="mt-3">Nike Flex jacket</h2>
                         
                         <p className="primary">R$ 240.00</p>
                    </div>
@@ -74,7 +76,10 @@ const Details = () =>{
                 <h2>Talvez você tambem goste</h2>
 
                 <div className="grid">
-                    <Card/> <Card/> <Card/> <Card/> 
+                    <Card bg={CardImg2} title="Nike Two" span="35% desconto"/>
+                    <Card bg={CardImg} title="Nike Flex jacket" span="Frete Gratis"/>
+                    <Card bg={CardImg} title="Nike Flex jacket" span="Frete Gratis"/>
+                    <Card bg={CardImg} title="Nike Flex jacket" span="Frete Gratis"/>
                 </div>
 
                 <Footer/>

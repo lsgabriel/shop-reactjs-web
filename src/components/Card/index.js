@@ -1,20 +1,19 @@
 import React from "react";
 
 import {CardContainer} from './styles';
-import CardImg from '../../assets/card-img.png';
 
 import { Link } from "react-router-dom";
 
-const Card = () => {
+const Card = (props) => {
     return (
         <CardContainer>
             <Link to='/details' style={{textDecoration:"none"}}>
-                <img src={CardImg} />
+                <img src={props.bg} />
                 <div className="card-text">
-                    <p className="name">Nike Air 4</p>
+                    <p className="name">{props.title}</p>
                     <p className="price">R$ 240.00</p>
 
-                    <span>Frete Gratis</span>
+                    <span>{props.span}</span>
                 </div>
             </Link>
         </CardContainer>
