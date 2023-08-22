@@ -25,7 +25,7 @@ export const HomeContainer = styled.div`
     }
 
     p{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         
         @media only screen and (max-width: 500px){
             font-size: 1.1rem;

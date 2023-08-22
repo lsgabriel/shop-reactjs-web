@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import {LoginContainer} from './styles';
 
+import Logo from '../../assets/logo1.png';
+
 import ButtonMd from "../../components/ButtonMd";
 import eye from '../../assets/eye.png';
 
@@ -19,9 +21,8 @@ const Login = () =>{
         <LoginContainer>
 
             <form>
-                <h1>Login</h1>
+                <img src={Logo} alt="Logo"/>
                 <p>Entre ou crie uma conta nova</p>
-
 
                 <label className="email-label" for="email">E-mail</label>
                 <div>
